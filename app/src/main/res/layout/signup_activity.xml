@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2d4059">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:ems="16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:hint="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsername"
+        app:layout_constraintStart_toStartOf="@id/editTextUsername"
+        app:layout_constraintEnd_toEndOf="@id/editTextUsername"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:hint="@string/confirm_password"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <Button
+        android:id="@+id/btnSignUpSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/sign_up_here"
+        android:layout_marginTop="35sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/rounded_btn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"
+        app:layout_constraintStart_toStartOf="@id/editTextConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@id/editTextConfirmPassword"/>
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpSU"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35sp"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/btnLoginSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/login_here"
+        android:textSize="16sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginTop="35sp"
+        android:background="@drawable/rounded_btn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@id/btnSignUpSU"
+        app:layout_constraintEnd_toEndOf="@id/btnSignUpSU"
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
+
+
+</android.support.constraint.ConstraintLayout>

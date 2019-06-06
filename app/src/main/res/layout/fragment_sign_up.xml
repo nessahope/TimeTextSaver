@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SignUpFragment"
+    android:orientation="vertical"
+    android:background="#2d4059">
+
+    <EditText
+        android:id="@+id/editTextUsernameSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:ems="16"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <EditText
+        android:id="@+id/editTextPasswordSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:textColorHint="#ee4540"
+        android:backgroundTint="#ea5455"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/register"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/rounded_btn"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>
